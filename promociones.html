@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Promociones - Legna</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <div class="logo">Legna</div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#promo-area">Promociones</a></li>
+                </ul>
+            </nav>
+            <img src="img/homeImage2.png" class="header-img" alt="Legna">
+            <div class="hero-content">
+                <h1>Promociones</h1>
+                <h2>Ahorra en tus compras</h2>
+            </div>
+        </header>
+
+        <main class="productos">
+            <section id="promo-area">
+            <h2>Calcula tu ahorro acá</h2>
+
+            <div id="product-list">
+                <p>Elegí tus productos preferidos</p>
+                <div class="producto" data-price="12000" data-id="1" data-category="pizzas-congeladas">
+                    <div class="info">
+                        <h3>Pizzas Congeladas</h3>
+                        <p>Precio unitario: $12.000</p>
+                        <label>Cantidad <input type="number" min="0" value="0" class="cantidad"></label>
+                    </div>
+                </div>
+
+                <div class="producto" data-price="4000" data-id="2">
+                    <div class="info">
+                        <h3>Sémola</h3>
+                        <p>Precio unitario: $4.000</p>
+                        <label>Cantidad <input type="number" min="0" value="0" class="cantidad"></label>
+                    </div>
+                </div>
+
+                <div class="producto" data-price="6000" data-id="3">
+                    <div class="info">
+                        <h3>Pomodoro</h3>
+                        <p>Precio unitario: $6.000</p>
+                        <label>Cantidad <input type="number" min="0" value="0" class="cantidad"></label>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Promociones disponibles</h3>
+            <div>
+                <label><input type="radio" name="promo" value="half-second" checked> Lleva 2 productos y obtené 50% en el segundo</label><br>
+                <label><input type="radio" name="promo" value="3x2"> 3x2 en pizzas congeladas</label><br>
+            </div>
+
+            <div style="margin-top:1rem;">
+                <button id="calc">Calcular total</button>
+            </div>
+
+            <div id="results" style="margin-top:1rem; background:#fff; padding:1rem; border-radius:6px;">
+                <p>Total sin descuento: $<span id="raw">0</span></p>
+                <p>Descuento aplicado: $<span id="discount">0</span></p>
+                <p>Total final: $<span id="final">0</span></p>
+            </div>
+
+            </section>
+        </main>
+
+        <script src="promociones.js"></script>
+        <footer>
+            <div class="info">
+            <h3>Contacto</h3>
+            <p>Tel: 1122334455</p>
+            <p>@legnamercado</p>
+            <p>Av. Pueyrredón 1464, Buenos Aires, Argentina</p>
+            <p>legnamercado@gmail.com</p>
+            <p>© 2025 Legna. Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
